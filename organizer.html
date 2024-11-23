@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizer - Eventify</title>
+    <link rel="stylesheet" href="css/orat.css">
+</head>
+<body>
+<header class="header">
+    <a href="#" class="logo">
+        <img src="images/eventify.png" alt="Eventify Logo" class="logo-img">
+        <span class="logo-text">eventify</span>
+    </a>
+</header>
+
+<section class="organizer">
+    <div class="content">
+        <h3>Organizer Dashboard</h3>
+        <form action="organizer.php" method="POST">
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" name="eventName" required>
+        
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+        
+            <label for="eventType">Event Type:</label>
+            <select id="eventType" name="eventType" required>
+                <option value="conference">Conference</option>
+                <option value="concert">Concert</option>
+                <option value="webinar">Webinar</option>
+            </select>
+            <button type="submit" class="btn"><b>Create Event</b></button>
+        </form>
+        <p>Want to see your events? <a href="all_events.html">View Events</a></p>
+    </div>
+</section>
+
+<script src="js/orat.js"></script>
+</body>
+</html>

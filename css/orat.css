@@ -1,0 +1,330 @@
+/* General styling */
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #523754;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Remove underline from the link */
+}
+
+/* Logo image styling */
+.header .logo-img {
+    width: 50px; /* Adjust size */
+    height: 50px; /* Adjust size */
+    border-radius: 50%; /* Make it round */
+    margin-right: 10px; /* Space between the logo and text */
+    transition: transform 0.3s ease-in-out; /* Smooth transformation */
+}
+
+/* Logo text styling */
+.header .logo-text {
+    font-weight: bolder;
+    color: #FFFFFF;
+    font-size: 2.5rem;
+}
+
+.header .logo-text span {
+    color: var(--main-color);
+}
+
+/* Logo image hover effect */
+.header .logo-img:hover {
+    transform: rotate(360deg) scale(1.2); /* Rotation and scaling effect */
+}
+
+/* Bounce animation for the logo */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.header .logo-img {
+    animation: bounce 2s infinite; /* Apply the bounce animation */
+}
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #FFFFFF;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+/* Main content section */
+section {
+    padding: 5rem 9%;
+}
+
+b {
+    color: #523754;
+}
+
+/* Color Variables */
+:root {
+    --main-color: #C8A9CB;
+}
+
+/* Organizer Form Styling */
+.organizer .content {
+    background: #773F7C;
+    border-radius: 1rem;
+    padding: 3rem;
+    max-width: 40rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.organizer .content h3 {
+    color: #FFFFFF;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.organizer form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.organizer form label {
+    font-size: 1.4rem;
+    color: #FFFFFF;
+}
+
+.organizer form input {
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    border: 1px solid #523754;
+    background: #FFFFFF;
+    color: #523754;
+}
+.organizer select,
+.organizer option {
+    padding: 1rem;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    border: 1px solid #523754;
+    background: #FFFFFF;
+    color: #523754;
+}
+
+.organizer form button {
+    padding: 1rem;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    background: var(--main-color);
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+.organizer form button:hover {
+    background: #773F7C;
+}
+
+.organizer p {
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.organizer p a {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.organizer p a:hover {
+    color: #523754;
+}
+
+/* Attender Search Event Page */
+.attender-page {
+    padding: 5rem 9%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #773F7C;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.attender-page h2 {
+    color: #FFFFFF;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.attender-page form {
+    background: #FFFFFF;
+    border-radius: 1rem;
+    padding: 3rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.attender-page label {
+    font-size: 1.4rem;
+    color: #523754;
+    margin-bottom: 0.8rem;
+}
+
+.attender-page select,
+.attender-page button {
+    padding: 1rem;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    border: 1px solid #523754;
+    background: #FFFFFF;
+    color: #523754;
+}
+
+.attender-page button {
+    background: var(--main-color);
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.attender-page button:hover {
+    background: #773F7C;
+}
+
+.attender-page p {
+    margin-top: 2rem;
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+.attender-page p a {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.attender-page p a:hover {
+    color: #523754;
+}
+
+/* Created Events Page */
+.events-page {
+    padding: 5rem 9%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #773F7C;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.events-page h2 {
+    color: #FFFFFF;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* Event List Styles */
+.event-list {
+    margin-top: 3rem;
+}
+
+.event-item {
+    background: #FFFFFF;
+    color: #523754;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.event-item:hover {
+    transform: scale(1.05);
+}
+
+.event-item h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.event-item p {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.event-item a {
+    font-size: 1.6rem;
+    color: var(--main-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.event-item a:hover {
+    color: #523754;
+    text-decoration: underline;
+}
+
+/* Link to Create Event */
+.events-page p {
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+}
+
+.events-page p a {
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.events-page p a:hover {
+    color: #523754;
+}
+/* Style for the events page */
+.events-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#event-list {
+    margin-top: 20px;
+}
+
+#event-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#event-list li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+#line_btn{
+    color: #523754;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find an Event</title>
+    <link rel="stylesheet" href="css/orat.css">
+</head>
+<body>
+    <div class="attender-page">
+        <h2>Find an Event</h2>
+        <form id="search-event-form" class="signup">
+            <div class="content">
+                <h3>Search for Events</h3>
+                <label for="search-event-type">Event Type:</label>
+                <select id="search-event-type" name="search-event-type" required>
+                    <option value="conference">Conference</option>
+                    <option value="concert">Concert</option>
+                    <option value="webinar">Webinar</option>
+                </select>
+
+                <button type="submit" >Search</button> 
+                <a href="all_events.html" class="line_btn" >    View All Events</a>
+
+                <!-- This div will hold the search results -->
+                <div id="event-results"></div>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/orat.js"></script>
+</body>
+</html>
